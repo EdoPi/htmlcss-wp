@@ -12,6 +12,10 @@ ul{
   list-style-type: none;
 }
 
+a {
+text-decoration: none;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -19,13 +23,10 @@ ul{
 }
 
 .container {
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
-
   position: relative;
-
-
-}
+  }
 
 header {
   background-color:white;
@@ -44,8 +45,10 @@ header {
 
 .box1 {
   width: 25%;
-  height: 300px;
-  background-color: pink;
+  /*   height: 300px;  */
+
+  padding-right: 30px;
+
 
 }
 
@@ -53,7 +56,7 @@ header {
 .box2 {
   width: 50%;
   height: 500px;
-  padding: 0 10px;
+  padding: 0 30px;
 }
 
 
@@ -61,19 +64,25 @@ header {
 .box3 {
   width: 25%;
   height: 500px;
-  background-color: #fff;
-
 }
+
+.content {
+  height: 100%;
+  background-color:white;
+  border-radius: 2%;
+}
+
+/* fine utility class*/
 
 
 footer {
   height: 100px;
-  background-color: green;
+  background-color: white;
 }
 
 .sidebar-container .sidebar-box:first-child {
   height: 250px;
-  background-color: orange;
+
 
 
 }
@@ -81,14 +90,16 @@ footer {
 .sidebar-container .sidebar-box:nth-child(2) {
   height: 250px;
   padding-top: 10px;
-
-
 }
 
-.content {
-  height: 100%;
-  background-color:brown;
-}
+/* fine layout*/
+
+
+
+
+
+
+/* inizio header*/
 
 .header-bg-container{
   padding: 15px;
@@ -125,4 +136,49 @@ footer {
 .nav-bar > ul{
   line-height: 50px;
   color:white;
+}
+
+/* fine header*/
+
+
+
+/* inizio content main*/
+
+
+.box1-title-container{
+
+padding-top: 5px;
+padding-left:10px;
+}
+
+.icona{
+  display: inline;
+  vertical-align: middle;
+}
+
+.box1-title{
+  width: 30%;
+  padding-left: 10px;
+  font-size: 20px;
+
+}
+
+.ul-container > ul > li > a{
+  color:green;
+}
+
+.ul-container > ul {
+  width: 80%;
+  margin-left:10px ;
+
+}
+
+.ul-container > ul > li {
+  margin-top: 10px;
+
+}
+
+.ul-container{
+padding: 10px 0;
+
 }
